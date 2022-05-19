@@ -1,0 +1,27 @@
+<div class="container">
+<div class="row">
+    <div class="input-group">
+        <div class="form-outline">
+            <input 
+                (input)="searchKeyword($event)"
+                (ngModelChange)="searchKeyword"
+                type="search" 
+                id="form1"
+                for="form1"
+                class="form-control" 
+                placeholder="Recherche d'article"
+                size="300"
+            >
+        </div>
+      </div>
+</div>
+    <div class="row">
+        <app-article 
+          *ngFor="let article of articles" 
+          [article]="article"
+          (deletedArticle)="delete($event)"
+          class="col-6"
+      >
+      </app-article>
+    </div>
+</div>

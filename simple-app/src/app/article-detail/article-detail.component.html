@@ -1,0 +1,8 @@
+<div class="overflow-y-auto h-full flex flex-col space-y-4 self-center pr-4">
+    <app-article
+        [article]="article"
+        (deletedArticle)="delete($event)"
+        class="!mt-14"
+    >
+    </app-article>
+</div>
