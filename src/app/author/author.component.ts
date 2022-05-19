@@ -12,9 +12,9 @@ export class AuthorComponent implements OnInit {
 
   @Input()
   author : Author = {
-    name: '',
+    name: 'Inconnu',
     id: 0,
-    bio: '',
+    bio: "Pas d'infos",
   };
 
   constructor(private route: ActivatedRoute, private authorService : AuthorService) { }
@@ -22,7 +22,7 @@ export class AuthorComponent implements OnInit {
   ngOnInit(): void {
     const name = this.route.snapshot.paramMap.get('name') || '';
     this.authorService.getAuthor(name).subscribe(value => {
-      this.author = value[0];
+      this.author = value;
     });
   }
 

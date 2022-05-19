@@ -31,7 +31,7 @@ export class ArticleService {
     return this.preloadArticles ? of(this.preloadArticles) : this.http.get<Article[]>(`${environment.apiUrl}/articles?_sort=date&_order=desc`);
   }
 
-  public getTopArticles(): Observable<Article[]> {
+  public getTopTen(): Observable<Article[]> {
     return this.getArticles().pipe(
       map(articles => articles.slice(0, 10))
     );
@@ -45,6 +45,10 @@ export class ArticleService {
 
   public deleteArticle(id: number): Observable<Article> {
     return this.http.delete<Article>(`${environment.apiUrl}/articles/${id}`);
+  }
+
+  public search(mot : string): Observable<Article[]> {
+    return this.getArticles().pipe(map(articles => articles.filter(article => article.title.includes(mot) ||  article.content.includes(mot) ||  article.author.includes(mot))));
   }
 
   public addArticle(article: ArticleCreation): Observable<Article> {
