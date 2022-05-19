@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/Article';
-import { ArticleService } from '../article-http-rest-source.service';
+import { ArticleService } from '../article.service';
 
 @Component({
   selector: 'app-articles',

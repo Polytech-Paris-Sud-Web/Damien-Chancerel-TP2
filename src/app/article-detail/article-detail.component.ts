@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ArticleService } from '../article-http-rest-source.service';
+import { ArticleService } from '../article.service';
 import { Article } from '../models/Article';
 
 @Component({

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Article } from '../models/Article';
-import { ArticleService } from '../article-http-rest-source.service';
+import { ArticleService } from '../article.service';
 
 @Component({
   selector: 'app-article-creation',
