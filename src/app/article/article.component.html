@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title"> {{this.article.title}} </h3>
+        <p 
+        class="text-justify"
+        (click)="openDetails()"
+    > 
+        {{this.article.content}} 
+    </p>
+    <div class="card-text">
+        <span 
+            class="italic underline"
+            (click)="showAuthorName()"
+        > 
+            {{ this.article.author }} 
+        </span>
+    </div>
+    <button 
+    type="button"
+    class="btn btn-danger btn-rounded"
+    (click)="delete()"
+>
+    Delete
+</button>
+    </div>
+</div>

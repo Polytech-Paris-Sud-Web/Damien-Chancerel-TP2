@@ -1,0 +1,19 @@
+  <h3 class="font-bold text-2xl"><i class="underline">Create your article</i></h3>
+  <form [formGroup]="articleForm" (ngSubmit)="createArticle()" class="space-y-4">
+    <div class="form-outline">
+      <input type="text" id="formControlDefault" class="form-control" formControlName="title" placeholder="Title">
+      <label class="form-label" for="formControlDefault"></label>
+    </div>
+
+    <div class="form-outline">
+      <textarea type="text" id="formControlDefault" class="form-control" formControlName="content" placeholder="Content"></textarea>
+      <label class="form-label" for="formControlDefault"></label>  
+    </div>
+
+    <div class="form-outline">
+      <input type="text" id="formControlDefault" class="form-control" formControlName="author" placeholder="Author">
+      <label class="form-label" for="formControlDefault"></label>
+    </div>
+
+    <button class="btn btn-success btn-rounded" [disabled]="articleForm.invalid" type="submit">Save</button>
+  </form>

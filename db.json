@@ -1,0 +1,94 @@
+{
+  "articles": [
+    {
+      "title": "Article 1",
+      "content": "Contenu du 1e article",
+      "author": "Sergio Leone",
+      "id": 1
+    },
+    {
+      "title": "Article 2",
+      "content": "Contenu du 2e article",
+      "author": "Barack Obama",
+      "id": 2
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu est incroyable",
+      "author": "Damzer",
+      "id": 4
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu est incroyable",
+      "author": "Damzer",
+      "id": 5
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu est incroyable",
+      "author": "Damzer",
+      "id": 6
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu est incroyable",
+      "author": "Damzer",
+      "id": 7
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu st incroyable",
+      "author": "Damzer",
+      "id": 8
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu est incroyable",
+      "author": "Damzer",
+      "id": 9
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu est incroyable",
+      "author": "Damzer",
+      "id": 10
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu est incroyable",
+      "author": "Damzer",
+      "id": 11
+    },
+    {
+      "title": "Titre époustouflant",
+      "content": "Ce contenu est incroyable",
+      "author": "Damzer",
+      "id": 12
+    },
+    {
+      "title": "test",
+      "content": "test",
+      "author": "Rrr",
+      "bio": "r",
+      "id": 13
+    }
+  ],
+  "authors": [
+    {
+      "name": "Barack Obama",
+      "bio": "Ancien président des etats-unis",
+      "id": 1
+    },
+    {
+      "name": "Damzer",
+      "bio": "Créateur du site web ",
+      "id": 2
+    },
+    {
+      "name": "Sergio Leone",
+      "bio": "Le S",
+      "id": 3
+    }
+  ]
+}
