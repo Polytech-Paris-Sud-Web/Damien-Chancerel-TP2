@@ -2,7 +2,7 @@
   "articles": [
     {
       "title": "Article 1",
-      "content": "Contenu du 1er article",
+      "content": "Contenu du 1e article",
       "author": "Sergio Leone",
       "id": 1
     },
